@@ -1,1 +1,3 @@
-These scripts provide an account of my attempts to make use of the HathiTrust word frequency data
+The HathiTrust is an online repository that provides page-level data of millions of books across non-fiction, novels, poetry and drama; Ted Underwood is the computational literary scholar who has published most extensively on what can be done with this material and my doctoral thesis drew from some summary files he and his collaborators made available online.
+
+Out of a sense of completionism I want to see what claims about literary history can be verified by applying some machine learning models to the broader dataset, this is going to take a long time and for the moment I'm setting myself the modest goal of identifying which volumes are in English.
