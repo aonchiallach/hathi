@@ -1,0 +1,1 @@
+These scripts provide an account of my attempts to make use of the HathiTrust word frequency data
