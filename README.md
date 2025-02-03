@@ -8,8 +8,9 @@ metadata pulls the publication date, title and author from every English languag
 
 deduplicate_write_fiction_jsons.R in the hathi-R folder takes: 
 
-i) eng_texts.txt
-ii) removal_authors.txt
+# eng_texts.txt
+
+# removal_authors.txt
 
 a list of authors who are either anachronisms (Virgil, Homer, Chaucer) or are primarily poets, dramatists, travel writers, authors of children's literature, none of which I was interested in here. A lot of these authors were identified in the course of a series of exploratory clustering / modelling work that didn't come to anything: they kept presenting themselves as outliers for the obvious reason that poetry and children's literature stands out in a pile
 
