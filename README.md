@@ -16,7 +16,7 @@ metadata.ipynb pulls the publication date, title and author from every English l
 
 ## Deduplicate volumes / remove poetry, prose, drama
 
-deduplicate_write_fiction_jsons.r takes: 
+deduplicate_write_fiction_jsons.R takes: 
 
 - eng_texts.txt
 
@@ -52,7 +52,7 @@ The author field contains this birth / death date data but its not standard. Som
 
 Again, the procedures I adopt here are the best that I could do according to time, resources, scope, technical capacity. I'm sure there are non-English texts from the fourteenth century in my analysis somewhere, just as there's mislabeled objects in the multihathi data or Underwood's paths, but everyone running this project will do things their own way and the most salient point is in the aggregate, we have data we can be broadly certain of.
 
-deduplicate_write_author_jsons.ipynb does the same thing as scrape_jsons_by_year.ipynb except the csvs are grouped by author rather than year - as can be seen in author_jsons.csv. This shift in focus means we remove authors which are blank, and authors which appear less than five times: we take this as an indicator that the author in question has published less than five books and therefore, falls below a qualifying threshold. We also calculate career_dates here: the median date at which each author published.
+deduplicate_write_author_jsons.R does the same thing as scrape_jsons_by_year.ipynb except the csvs are grouped by author rather than year - as can be seen in author_jsons.csv. This shift in focus means we remove authors which are blank, and authors which appear less than five times: we take this as an indicator that the author in question has published less than five books and therefore, falls below a qualifying threshold. We also calculate career_dates here: the median date at which each author published.
 
 ## Future work
 
