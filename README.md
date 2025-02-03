@@ -58,14 +58,16 @@ deduplicate_write_author_jsons.R does the same thing as scrape_jsons_by_year.ipy
 
 findwords.R is the very simple means through which I relate words operating on the macro scale to texts on the level of the paragraph.
 
-posnegwordsanalysis.R takes the year-specific csvs we compiled in scrape_jsons_by_years.ipynb and pulls them into a datatable. We calculate the total word use for every year and use removal_words to remove the words we don't want. Like the list of anachronistic authors this list was compiled over a reasonably long period of time, it is overwhelmingly names, but is also stuff like 'thirtythree' or 'y'.
+posneg_words_analysis.R takes the year-specific csvs we compiled in scrape_jsons_by_years.ipynb and pulls them into a datatable. We calculate the total word use for every year and use removal_words to remove the words we don't want. Like the list of anachronistic authors this list was compiled over a reasonably long period of time, it is overwhelmingly names, but is also stuff like 'thirtythree' or 'y'.
 
 replacement_words.csv overwhelmingly deals with the tendency whatever OCR software was used at the beginning of all this to read 's' as 'f'.
 
 The top 10k words across every year is arrived at via proportional representation - we output this as mfws.txt to make scraping_authors_by_jsons.ipynb more efficient.
 
-We output the finished dataframe (year_data.csv - too big for GitHub) and also the words which increase or decrease their presence in literature over time pos.txt / neg.txt. We also have some part-of-speech analysis in there.
+We output the finished dataframe (year_data.csv) and also the words which increase or decrease their presence in literature over time pos.txt / neg.txt. We also have some part-of-speech analysis in there.
 
-## Future work
+munge_and_write_author_data.R does the same thing posneg_words_analysis.R does but for authors, the result (author_data.csv) is too big for GitHub.
+
+# Future Work
 
 influence_wip.R was a modelling exercise I only got desultory results from, might return to it in the future.
