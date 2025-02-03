@@ -1,3 +1,5 @@
+# Introduction
+
 The HathiTrust is an online repository that provides page-level data extracted from millions of books across hundreds of genres, broadly grouped in most analyses into four: non-fiction, novels, poetry and drama. Ted Underwood is the computational literary scholar who has written most extensively on what can be done with this material and my doctoral thesis drew from some summary files he and his collaborators made available online.
 
 Out of a completionist impulse I wanted to see what claims about literary history can be verified by applying some machine learning models to the broader dataset and write this up in order to assist people who want to do the same thing.
@@ -8,9 +10,9 @@ metadata pulls the publication date, title and author from every English languag
 
 deduplicate_write_fiction_jsons.R in the hathi-R folder takes: 
 
-# eng_texts.txt
+- eng_texts.txt
 
-# removal_authors.txt
+- removal_authors.txt
 
 a list of authors who are either anachronisms (Virgil, Homer, Chaucer) or are primarily poets, dramatists, travel writers, authors of children's literature, none of which I was interested in here. A lot of these authors were identified in the course of a series of exploratory clustering / modelling work that didn't come to anything: they kept presenting themselves as outliers for the obvious reason that poetry and children's literature stands out in a pile
 
