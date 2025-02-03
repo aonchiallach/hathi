@@ -4,6 +4,8 @@ The HathiTrust is an online repository that provides page-level data extracted f
 
 Out of a completionist impulse I wanted to see what claims about literary history can be verified by applying some machine learning models to the broader dataset and write this up in order to assist people who want to do the same thing.
 
+# Getting started
+
 We start with hathi, which iterates through every json, identifies how many pages of a given volume are written in English and if this figure > 70% of the total pages, the file id is written to a txt file eng_texts, which is too big to push up here but I can make available to anyone who wants it. This takes a very long time to run, but is very much worthwhile, as there is an attrition rate of just under 50%. 
 
 metadata pulls the publication date, title and author from every English language json and writes them to extracted_metadata.csv, also too large to push up but available on request.
@@ -12,13 +14,15 @@ deduplicate_write_fiction_jsons.R in the hathi-R folder takes:
 
 - eng_texts.txt
 
+See above
+
 - removal_authors.txt
 
-a list of authors who are either anachronisms (Virgil, Homer, Chaucer) or are primarily poets, dramatists, travel writers, authors of children's literature, none of which I was interested in here. A lot of these authors were identified in the course of a series of exploratory clustering / modelling work that didn't come to anything: they kept presenting themselves as outliers for the obvious reason that poetry and children's literature stands out in a pile
+a list of authors who are either anachronisms (Virgil, Homer, Chaucer) or are primarily poets, dramatists, travel writers, authors of children's literature, none of which I was interested in here. A lot of these authors were identified in the course of a series of subsequent exploratory clustering / modelling work that didn't come to anything: they kept presenting themselves as outliers for the obvious reason that poetry and children's literature stands out in a pile
 
 - multihathi.csv
 
-Andrew Piper and Sil Hamilton's dataset (https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.95) which contains metadata relating to 10.2 million works of fiction and non-fiction written from 1800 on 521 languages.
+Andrew Piper and Sil Hamilton's [dataset](https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.95) which contains metadata relating to 10.2 million works of fiction and non-fiction written from 1800 on 521 languages.
 
 Initially my plan was to run an unsupervised machine learning analysis on everything: bibliographic and word-frequency data across all English-language texts in order to derive my own benchmarks for discriminant genre analysis so I could say something substantive about fiction, poetry and drama. 
 
