@@ -54,6 +54,10 @@ Again, the procedures I adopt here are the best that I could do according to tim
 
 deduplicate_write_author_jsons.R does the same thing as scrape_jsons_by_year.ipynb except the csvs are grouped by author rather than year - as can be seen in author_jsons.csv. This shift in focus means we remove authors which are blank, and authors which appear less than five times: we take this as an indicator that the author in question has published less than five books and therefore, falls below a qualifying threshold. We also calculate career_dates here: the median date at which each author published.
 
+## Analysis
+
+findwords.R is the very simple means through which I relate words operating on the macro scale to texts on the level of the paragraph.
+
 ## Future work
 
 influence_wip was a modelling exercise I only got desultory results from, might return to it in the future.
