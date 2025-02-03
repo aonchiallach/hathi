@@ -60,4 +60,4 @@ findwords.R is the very simple means through which I relate words operating on t
 
 ## Future work
 
-influence_wip was a modelling exercise I only got desultory results from, might return to it in the future.
+influence_wip.R was a modelling exercise I only got desultory results from, might return to it in the future.
