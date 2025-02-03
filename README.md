@@ -62,7 +62,9 @@ posnegwordsanalysis.R takes the year-specific csvs we compiled in scrape_jsons_b
 
 replacement_words.csv overwhelmingly deals with the tendency whatever OCR software was used at the beginning of all this to read 's' as 'f'.
 
-The top 10k words across every year is arrived at via proportional representation, we output the finished dataframe and also the words which increase or decrease their presence in literature over time pos.txt / neg.txt. We also have some part-of-speech analysis in there.
+The top 10k words across every year is arrived at via proportional representation - we output this as mfws.txt to make scraping_authors_by_jsons.ipynb more efficient.
+
+We output the finished dataframe (year_data.csv - too big for GitHub) and also the words which increase or decrease their presence in literature over time pos.txt / neg.txt. We also have some part-of-speech analysis in there.
 
 ## Future work
 
