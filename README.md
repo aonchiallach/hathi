@@ -16,7 +16,7 @@ deduplicate_write_fiction_jsons.R in the hathi-R folder takes:
 
 a list of authors who are either anachronisms (Virgil, Homer, Chaucer) or are primarily poets, dramatists, travel writers, authors of children's literature, none of which I was interested in here. A lot of these authors were identified in the course of a series of exploratory clustering / modelling work that didn't come to anything: they kept presenting themselves as outliers for the obvious reason that poetry and children's literature stands out in a pile
 
-iii) multihathi.csv
+- multihathi.csv
 
 Andrew Piper and Sil Hamilton's dataset (https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.95) which contains metadata relating to 10.2 million works of fiction and non-fiction written from 1800 on 521 languages.
 
